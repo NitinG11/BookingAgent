@@ -1,14 +1,16 @@
 package repositories;
 
-import model.HotelDO;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+
+import model.HotelDO;
 
 
 @Repository
 public interface IHotelRepository extends JpaRepository<HotelDO, Long> {
 
+	List<HotelDO> findByCityCityNameAndActive(String cityName,boolean active);
 	
 }

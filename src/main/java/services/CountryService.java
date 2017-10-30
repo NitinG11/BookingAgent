@@ -13,9 +13,8 @@ public class CountryService {
 	@Autowired
 	ICountryRepository countryRepo;
 	
-	public boolean createCountry(CountryDO country) {
-		countryRepo.save(country);
-		return true;
+	public CountryDO createCountry(CountryDO country) {
+		return countryRepo.save(country);
 	}
 	
 	public CountryDO findByName(String name) {

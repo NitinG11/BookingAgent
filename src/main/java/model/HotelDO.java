@@ -50,6 +50,9 @@ public class HotelDO {
 	@Column(name= "LATITUDE", nullable = true)
 	private double latitiude;
 	
+	@Column(name = "Active")
+	private boolean active;
+	
 	public HotelDO() {
 		super();
 		// TODO Auto-generated constructor stub

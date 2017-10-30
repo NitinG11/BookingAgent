@@ -15,8 +15,8 @@ public class CityService {
 	@Autowired
 	ICityRepository citySvc;
 	
-	public void addCity(CityDO city) {
-		citySvc.save(city);
+	public CityDO addCity(CityDO city) {
+		return citySvc.save(city);
 	}
 	
 	public CityDO findByName(String cityName) {
