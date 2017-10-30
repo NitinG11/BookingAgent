@@ -1,9 +1,10 @@
 package services;
 
+import model.CountryDO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import DO.CountryDO;
 import repositories.ICountryRepository;
 
 @Service
